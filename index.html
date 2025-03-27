@@ -1,96 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt">
+ <!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite da Turma de Informática</title>
-    <link href="https://patrick3983.github.io/projetonosso/style.css" rel="stylesheet">
+    <title>Chave Pix - Paulo Augusto</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            background: url("https://www.leidainformatica.com/wp-content/uploads/2020/06/portarias-LI-scaled.jpg") no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        header {
-            background-color: transparent;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 20px;
-        }
-
-        nav {
-            background-color: rgba(0, 0, 0, 0.24);
-            overflow: hidden;
-        }
-
-        nav a {
-            float: right;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-        }
-
-        div {
-            border: 3px solid black;
-            margin: 20px;
-            background-color: rgba(0, 0, 0, 0.63);
-            padding: 20px;
-        }
-
-        section {
-            padding: 1rem;
-            color: #fff;
-            font-size: 16px;
-        }
-
-        h1, h2, h3, h4, h5 {
-            margin: 0;
-            color: white;
-        }
-
-        button {
-            display: block;
-            margin-top: 10px;
-            padding: 10px 20px;
             background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: none;
+        }
+        .card h2 {
             color: #000;
-            border: none;
-            cursor: pointer;
+            margin-bottom: 10px;
         }
-
-        p {
-            color: white;
+        .pix-key {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000;
+            margin: 10px 0;
         }
-
-        @media (max-width: 768px) {
-            section {
-                font-size: 14px;
-                padding: 0.5rem;
+        .print-button {
+            display: none;
+        }
+        @media print {
+            body {
+                background: none;
+            }
+            .card {
+                border: none;
+                box-shadow: none;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1><b style = "font-family:courier,arial,helvetica;">CONVITE ESPECIAL<br>PROJETO INTEGRADOR<br><u>Técnico em Informática</u><br>SENAC Três Corações</b></h1>
-    </header>
-    <div>
-        <section>
-            <h4>Gostaríamos de convidá-lo(a), para participar da apresentação do Projeto Integrador 2023, a se realizar no Auditório do SENAC, às 19h30 do dia 02 de outubro de 2023. </h4>
-            <p><h3></h3><br>Teremos a apresentação de projetos voltados para soluções de problemas, colaboração, sustentabilidade entre outros.<br><b>
-            <p>Ah!! Teremos sorteios de brindes após cada apresentação.</p>
-            <h3>Não perca!!</h3>
-           
-        </section>
+    <div class="card">
+        <h2>Chave Pix</h2>
+        <p class="pix-key">Paulo Augusto</p>
+        <p class="pix-key">(35) 98807-1233</p>
+        <button class="print-button" onclick="window.print()">Imprimir</button>
     </div>
 </body>
 </html>
+
